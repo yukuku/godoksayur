@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://b43hgg62afkk7"]
+
+[ext_resource type="PackedScene" uid="uid://q0wltfd7ordm" path="res://scenes/pemain.tscn" id="1_v7v3i"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1afrc"]
+distance = 80.0
+
+[node name="Gem" type="Node2D"]
+
+[node name="Pemain" parent="." instance=ExtResource("1_v7v3i")]
+position = Vector2(137, 107)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(140, 87)
+zoom = Vector2(4, 4)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(111, 224)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_1afrc")
