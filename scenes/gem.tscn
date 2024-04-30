@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://b43hgg62afkk7"]
+[gd_scene load_steps=11 format=3 uid="uid://b43hgg62afkk7"]
 
 [ext_resource type="PackedScene" uid="uid://q0wltfd7ordm" path="res://scenes/pemain.tscn" id="1_v7v3i"]
 [ext_resource type="Texture2D" uid="uid://b4nqfdg25elw1" path="res://assets/sprites/world_tileset.png" id="2_prdm4"]
 [ext_resource type="PackedScene" uid="uid://xd08hg2kuq4h" path="res://scenes/peron.tscn" id="3_a4i04"]
+[ext_resource type="PackedScene" uid="uid://c85kpi5y5qy47" path="res://scenes/koin.tscn" id="4_py6ns"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qibnu"]
 texture = ExtResource("2_prdm4")
@@ -454,7 +455,7 @@ _data = {
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_cvgwi")
 format = 2
-layer_0/tile_data = PackedInt32Array(524289, 196608, 1, 524290, 196608, 1, 524291, 196608, 1, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 262155, 0, 0, 262156, 0, 0, 262157, 0, 0, 327685, 0, 0, 327686, 0, 0, 196616, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 524301, 0, 1, 589837, 0, 1, 393230, 0, 0, 458766, 0, 1, 524302, 0, 1, 589838, 0, 1, 393231, 0, 0, 458767, 0, 1, 524303, 0, 1, 589839, 0, 1, 196608, 196608, 1, 262144, 196608, 0, 196609, 131072, 0, 262145, 196608, 1, 327680, 196608, 1, 393216, 196608, 0, 327681, 196608, 0, 393217, 196608, 1, 327682, 131072, 0, 393218, 196608, 1, 327683, 131072, 0, 393219, 196608, 1, 458752, 196608, 1, 524288, 131072, 1, 458753, 196608, 0, 458754, 196608, 0, 458755, 196608, 0, 131072, 131072, 0, 262160, 0, 0, 327696, 0, 1, 393232, 0, 1, 458768, 0, 1, 524304, 0, 1, 589840, 0, 1, 589831, 0, 1, 589830, 0, 1, 589829, 0, 1, 589828, 0, 1, 589827, 0, 1, 589826, 0, 1, 589825, 0, 1, 589824, 0, 1, 327695, 0, 5, 131087, 0, 4, 196623, 0, 4, 262159, 0, 4, 65551, 0, 3, 196610, 0, 3, 262146, 0, 5, 196613, 589824, 0, 196614, 655360, 0, 196615, 720896, 0, 196612, 0, 0)
+layer_0/tile_data = PackedInt32Array(524289, 196608, 1, 524290, 196608, 1, 524291, 196608, 1, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 262155, 0, 0, 262156, 0, 0, 262157, 0, 0, 327685, 0, 0, 327686, 0, 0, 196616, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 524301, 0, 1, 589837, 0, 1, 393230, 0, 0, 458766, 0, 1, 524302, 0, 1, 589838, 0, 1, 393231, 0, 0, 458767, 0, 1, 524303, 0, 1, 589839, 0, 1, 196608, 196608, 1, 262144, 196608, 0, 196609, 131072, 0, 262145, 196608, 1, 327680, 196608, 1, 393216, 196608, 0, 327681, 196608, 0, 393217, 196608, 1, 327682, 131072, 0, 393218, 196608, 1, 327683, 131072, 0, 393219, 196608, 1, 458752, 196608, 1, 524288, 131072, 1, 458753, 196608, 0, 458754, 196608, 0, 458755, 196608, 0, 131072, 131072, 0, 262160, 0, 0, 327696, 0, 1, 393232, 0, 1, 458768, 0, 1, 524304, 0, 1, 589840, 0, 1, 589831, 0, 1, 589830, 0, 1, 589829, 0, 1, 589828, 0, 1, 589827, 0, 1, 589826, 0, 1, 589825, 0, 1, 589824, 0, 1, 327695, 0, 5, 131087, 0, 4, 196623, 0, 4, 262159, 0, 4, 65551, 0, 3, 196610, 0, 3, 262146, 0, 5, 196613, 589824, 0, 196614, 655360, 0, 196615, 720896, 0, 196612, 0, 0, 589847, 131072, 1, 524311, 131072, 1, 458775, 131072, 1, 393239, 131072, 1, 327703, 131072, 1, 262167, 131072, 1, 589846, 131072, 1, 524310, 131072, 1, 458774, 131072, 1, 393238, 131072, 1, 589845, 131072, 1, 524309, 131072, 1, 589844, 131072, 0, 458773, 131072, 0, 327702, 131072, 0, 196631, 131072, 0, 65560, 131072, 0, 131096, 131072, 1, 196632, 131072, 1, 262168, 131072, 1, 327704, 131072, 1, 393240, 131072, 1, 589848, 131072, 1, 524312, 131072, 1, 458776, 131072, 1, 65557, 589824, 1, 65558, 655360, 1, 65559, 720896, 1, 65556, 131072, 2, 131092, 131072, 1, 196628, 131072, 1, 196605, 65536, 2, 65533, 65536, 2)
 
 [node name="Pemain" parent="." instance=ExtResource("1_v7v3i")]
 position = Vector2(137, 107)
@@ -465,7 +466,7 @@ zoom = Vector2(4, 4)
 position_smoothing_enabled = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(111, 224)
+position = Vector2(208, 240)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
@@ -479,3 +480,45 @@ libraries = {
 "": SubResource("AnimationLibrary_jcxuc")
 }
 autoplay = "goyang"
+
+[node name="Koin" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(104, 24)
+
+[node name="Koin2" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(144, 24)
+
+[node name="Koin3" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(120, 24)
+
+[node name="Koin4" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(88, 24)
+
+[node name="Koin5" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(8, 8)
+
+[node name="Koin6" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(8, 8)
+
+[node name="Koin7" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(-40, -24)
+
+[node name="Koin8" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(376, 40)
+
+[node name="Koin9" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(360, 40)
+
+[node name="Koin10" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(344, 40)
+
+[node name="Koin11" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(240, -40)
+
+[node name="Koin12" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(392, 8)
+
+[node name="Koin13" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(392, -8)
+
+[node name="Koin14" parent="." instance=ExtResource("4_py6ns")]
+position = Vector2(392, -24)
