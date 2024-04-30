@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://th3pyx4qvej4"]
 
-[ext_resource type="Script" path="res://scripts/bunuh.gd" id="1_8tm0l"]
+[ext_resource type="Script" path="res://naskah/bunuh.gd" id="1_gqg70"]
 
 [node name="bunuh" type="Area2D"]
 collision_mask = 2
-script = ExtResource("1_8tm0l")
+script = ExtResource("1_gqg70")
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true

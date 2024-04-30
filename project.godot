@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Brackeys-godot-01"
-run/main_scene="res://scenes/gem.tscn"
+run/main_scene="res://adegan/gem.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 

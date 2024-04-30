@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmk5sjg56qevd"
-path="res://.godot/imported/knight.png-7c67c83d34932624952797d9e971a644.ctex"
+uid="uid://dbv31o7cktr7d"
+path="res://.godot/imported/platforms.png-a476d66e8f5aa91a94f3a5028b16d11a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/knight.png"
-dest_files=["res://.godot/imported/knight.png-7c67c83d34932624952797d9e971a644.ctex"]
+source_file="res://aset/peri/platforms.png"
+dest_files=["res://.godot/imported/platforms.png-a476d66e8f5aa91a94f3a5028b16d11a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxhmcpoddfp6s"
-path="res://.godot/imported/slime_purple.png-26dc5ddef235ce6a400e78e0d532b050.ctex"
+uid="uid://dewivn6dwycf4"
+path="res://.godot/imported/coin.png-1d65a5462e56cf827e5e64a8e46eb186.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/slime_purple.png"
-dest_files=["res://.godot/imported/slime_purple.png-26dc5ddef235ce6a400e78e0d532b050.ctex"]
+source_file="res://aset/peri/coin.png"
+dest_files=["res://.godot/imported/coin.png-1d65a5462e56cf827e5e64a8e46eb186.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://ba1ejbh3pirq"]
 
-[ext_resource type="Texture2D" uid="uid://pkgsyhstkbgp" path="res://assets/sprites/slime_green.png" id="1_elt5o"]
-[ext_resource type="PackedScene" uid="uid://th3pyx4qvej4" path="res://scenes/bunuh.tscn" id="2_6jxcl"]
+[ext_resource type="Texture2D" uid="uid://pkgsyhstkbgp" path="res://aset/peri/slime_green.png" id="1_elt5o"]
+[ext_resource type="PackedScene" uid="uid://th3pyx4qvej4" path="res://adegan/bunuh.tscn" id="2_6jxcl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u77qq"]
 atlas = ExtResource("1_elt5o")
