@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://b43hgg62afkk7"]
+[gd_scene load_steps=13 format=3 uid="uid://b43hgg62afkk7"]
 
 [ext_resource type="PackedScene" uid="uid://q0wltfd7ordm" path="res://scenes/pemain.tscn" id="1_v7v3i"]
 [ext_resource type="Texture2D" uid="uid://b4nqfdg25elw1" path="res://assets/sprites/world_tileset.png" id="2_prdm4"]
 [ext_resource type="PackedScene" uid="uid://xd08hg2kuq4h" path="res://scenes/peron.tscn" id="3_a4i04"]
 [ext_resource type="PackedScene" uid="uid://c85kpi5y5qy47" path="res://scenes/koin.tscn" id="4_py6ns"]
 [ext_resource type="PackedScene" uid="uid://th3pyx4qvej4" path="res://scenes/bunuh.tscn" id="4_w51s6"]
+[ext_resource type="PackedScene" uid="uid://ba1ejbh3pirq" path="res://scenes/lendir.tscn" id="6_d6ubg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qibnu"]
 texture = ExtResource("2_prdm4")
@@ -527,3 +528,12 @@ position = Vector2(392, -8)
 
 [node name="Koin14" parent="segala koin" instance=ExtResource("4_py6ns")]
 position = Vector2(392, -24)
+
+[node name="Lendir" parent="." instance=ExtResource("6_d6ubg")]
+position = Vector2(72, 48)
+
+[node name="Lendir2" parent="." instance=ExtResource("6_d6ubg")]
+position = Vector2(360, 80)
+
+[node name="Lendir3" parent="." instance=ExtResource("6_d6ubg")]
+position = Vector2(184, 112)

@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://ba1ejbh3pirq"]
+
+[ext_resource type="Texture2D" uid="uid://pkgsyhstkbgp" path="res://assets/sprites/slime_green.png" id="1_elt5o"]
+[ext_resource type="PackedScene" uid="uid://th3pyx4qvej4" path="res://scenes/bunuh.tscn" id="2_6jxcl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u77qq"]
+atlas = ExtResource("1_elt5o")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukxln"]
+atlas = ExtResource("1_elt5o")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujcx3"]
+atlas = ExtResource("1_elt5o")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2jdxo"]
+atlas = ExtResource("1_elt5o")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c10pk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u77qq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukxln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujcx3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2jdxo")
+}],
+"loop": true,
+"name": &"nganggur",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fkilt"]
+size = Vector2(12, 12)
+
+[node name="Lendir" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -12)
+sprite_frames = SubResource("SpriteFrames_c10pk")
+animation = &"nganggur"
+frame_progress = 0.563162
+
+[node name="bunuh" parent="." instance=ExtResource("2_6jxcl")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bunuh"]
+position = Vector2(0, -6)
+shape = SubResource("RectangleShape2D_fkilt")
