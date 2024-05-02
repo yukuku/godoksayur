@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://ba1ejbh3pirq"]
+[gd_scene load_steps=10 format=3 uid="uid://ba1ejbh3pirq"]
 
+[ext_resource type="Script" path="res://naskah/lendir.gd" id="1_1e4u7"]
 [ext_resource type="Texture2D" uid="uid://pkgsyhstkbgp" path="res://aset/peri/slime_green.png" id="1_elt5o"]
 [ext_resource type="PackedScene" uid="uid://th3pyx4qvej4" path="res://adegan/bunuh.tscn" id="2_6jxcl"]
 
@@ -43,6 +44,7 @@ animations = [{
 size = Vector2(12, 12)
 
 [node name="Lendir" type="Node2D"]
+script = ExtResource("1_1e4u7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
@@ -55,3 +57,11 @@ frame_progress = 0.563162
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bunuh"]
 position = Vector2(0, -6)
 shape = SubResource("RectangleShape2D_fkilt")
+
+[node name="Pancar sinar kanan" type="RayCast2D" parent="."]
+position = Vector2(0, -6)
+target_position = Vector2(8, 0)
+
+[node name="Pancar sinar kiri" type="RayCast2D" parent="."]
+position = Vector2(0, -6)
+target_position = Vector2(-8, 0)
