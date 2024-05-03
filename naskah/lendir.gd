@@ -22,7 +22,6 @@ func _process(delta):
 		arah = +1
 		
 	# awas jatoh
-	print(sensor_lantai_kanan.is_colliding())
 	if not sensor_lantai_kanan.is_colliding():
 		arah = -1
 	if not sensor_lantai_kiri.is_colliding():
