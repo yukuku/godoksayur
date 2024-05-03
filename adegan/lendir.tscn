@@ -65,3 +65,11 @@ target_position = Vector2(8, 0)
 [node name="Pancar sinar kiri" type="RayCast2D" parent="."]
 position = Vector2(0, -6)
 target_position = Vector2(-8, 0)
+
+[node name="Sensor lantai kanan" type="RayCast2D" parent="."]
+position = Vector2(6, -7)
+target_position = Vector2(0, 12)
+
+[node name="Sensor lantai kiri" type="RayCast2D" parent="."]
+position = Vector2(-6, -7)
+target_position = Vector2(0, 12)
