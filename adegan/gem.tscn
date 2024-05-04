@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b43hgg62afkk7"]
+[gd_scene load_steps=15 format=3 uid="uid://b43hgg62afkk7"]
 
 [ext_resource type="PackedScene" uid="uid://q0wltfd7ordm" path="res://adegan/pemain.tscn" id="1_v7v3i"]
 [ext_resource type="Texture2D" uid="uid://b4nqfdg25elw1" path="res://aset/peri/world_tileset.png" id="2_prdm4"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://c85kpi5y5qy47" path="res://adegan/koin.tscn" id="4_py6ns"]
 [ext_resource type="PackedScene" uid="uid://th3pyx4qvej4" path="res://adegan/bunuh.tscn" id="4_w51s6"]
 [ext_resource type="PackedScene" uid="uid://ba1ejbh3pirq" path="res://adegan/lendir.tscn" id="6_d6ubg"]
+[ext_resource type="Script" path="res://naskah/wasit.gd" id="7_eamjp"]
+[ext_resource type="FontFile" uid="uid://mmwpoj58dao5" path="res://aset/font/PixelOperator8.ttf" id="8_63761"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qibnu"]
 texture = ExtResource("2_prdm4")
@@ -502,9 +504,6 @@ position = Vector2(88, 24)
 [node name="Koin5" parent="segala koin" instance=ExtResource("4_py6ns")]
 position = Vector2(8, 8)
 
-[node name="Koin6" parent="segala koin" instance=ExtResource("4_py6ns")]
-position = Vector2(8, 8)
-
 [node name="Koin7" parent="segala koin" instance=ExtResource("4_py6ns")]
 position = Vector2(-40, -24)
 
@@ -537,3 +536,21 @@ position = Vector2(360, 80)
 
 [node name="Lendir3" parent="." instance=ExtResource("6_d6ubg")]
 position = Vector2(184, 112)
+
+[node name="Wasit" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("7_eamjp")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label duit" type="Label" parent="CanvasLayer"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 116.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("8_63761")
+theme_override_font_sizes/font_size = 32
+text = "Duit 888"
