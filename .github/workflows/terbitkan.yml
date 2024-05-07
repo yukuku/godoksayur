@@ -1,6 +1,7 @@
 name: "godot-ci export"
 
 permissions: 
+  contents: write
   pages: write
 
 # Triggers the workflow on push or pull request events but only for the "master" branch
