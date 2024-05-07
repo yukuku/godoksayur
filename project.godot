@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Brackeys-godot-01"
+config/name="Godok Sayur Buncis dan Kacang Panjang"
 run/main_scene="res://adegan/gem.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
