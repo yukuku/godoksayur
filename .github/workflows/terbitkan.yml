@@ -38,6 +38,9 @@ jobs:
           mkdir -v -p build/web
           godot --headless --editor --quit-after 20
           godot --headless --export-release "Web" build/web/index.html
+      - name: Tambah coi buat benerin header
+        run: |
+          cp distribusi/coi-serviceworker.js build/web/
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
