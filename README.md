@@ -1,3 +1,7 @@
-# Godok sayur buncis dan kacang panjang ⬇
+# Godok sayur buncis dan kacang panjang
 
-[![Vidionya](https://img.youtube.com/vi/LOhfqjmasi0/0.jpg)](https://www.youtube.com/watch?v=LOhfqjmasi0)
+Lanjutan dari [sini](https://github.com/yukuku/brackeys-godot-01).
+
+### Main online di sini ⬇️
+
+https://yukuku.github.io/godoksayur/ (auto deploy dari master)
