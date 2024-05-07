@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  GODOT_VERSION: 4.2.1
+  GODOT_VERSION: 4.2.2
   EXPORT_NAME: godoksayur
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
