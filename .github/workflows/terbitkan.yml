@@ -32,8 +32,8 @@ jobs:
       - name: Web Build
         run: |
           mkdir -v -p build/web
-          godot --headless --verbose --editor --quit-after 20
-          godot --headless --verbose --export-release "Web" ../build/web/index.html
+          godot --headless --editor --quit-after 20
+          godot --headless --export-release "Web" build/web/index.html
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
