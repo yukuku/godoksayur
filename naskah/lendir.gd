@@ -42,5 +42,12 @@ func _process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, LAJU_JALAN)
 
+	var collision = move_and_collide(velocity * delta, true)
+	if collision:
+		var collider = collision.get_collider()
+		if collider is Pemain:
+			collider.kena(15)
+	
 	move_and_slide()
+	
 	

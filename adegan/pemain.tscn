@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://q0wltfd7ordm"]
+[gd_scene load_steps=30 format=3 uid="uid://q0wltfd7ordm"]
 
 [ext_resource type="Script" path="res://naskah/pemain.gd" id="1_vhfhe"]
 [ext_resource type="Texture2D" uid="uid://dmk5sjg56qevd" path="res://aset/peri/knight.png" id="1_xli7s"]
@@ -70,6 +70,22 @@ region = Rect2(224, 96, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_ahrat"]
 atlas = ExtResource("1_xli7s")
 region = Rect2(64, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_386v3"]
+atlas = ExtResource("1_xli7s")
+region = Rect2(0, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p0fsb"]
+atlas = ExtResource("1_xli7s")
+region = Rect2(32, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cw6ne"]
+atlas = ExtResource("1_xli7s")
+region = Rect2(64, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujm61"]
+atlas = ExtResource("1_xli7s")
+region = Rect2(96, 224, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8pawj"]
 atlas = ExtResource("1_xli7s")
@@ -152,6 +168,23 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_386v3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p0fsb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cw6ne")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujm61")
+}],
+"loop": false,
+"name": &"mati",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_8pawj")
 }, {
 "duration": 1.0,
@@ -179,9 +212,14 @@ script = ExtResource("1_vhfhe")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_26qwm")
-animation = &"loncat"
+animation = &"mati"
 autoplay = "nganggur"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_73f52")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

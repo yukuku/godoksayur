@@ -546,7 +546,7 @@ script = ExtResource("7_eamjp")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Label duit" type="Label" parent="CanvasLayer"]
+[node name="Label status" type="Label" parent="CanvasLayer"]
 offset_left = 16.0
 offset_top = 16.0
 offset_right = 116.0
@@ -555,5 +555,6 @@ theme_override_colors/font_color = Color(0, 1, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 2
 theme_override_fonts/font = ExtResource("8_63761")
-theme_override_font_sizes/font_size = 32
-text = "Duit 888"
+theme_override_font_sizes/font_size = 16
+text = "HP 888
+Duit 888"

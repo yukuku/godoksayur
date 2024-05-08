@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+class_name Pemain
 
 const SPEED = 100.0
 const JUMP_VELOCITY = -300.0
@@ -8,8 +8,10 @@ const JUMP_VELOCITY = -300.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 var uda_loncat = 0
+var hp = 100
 
 @onready var animated_sprite = $AnimatedSprite2D
+@onready var timer = $Timer
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -47,3 +49,27 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+
+
+
+func kena(atk: float):
+	print('kena atk=' + str(atk))
+	hp -= atk
+	if hp < 0:
+		mati()
+		
+		
+func mati():
+	hp = 0
+	Engine.time_scale = 0.5
+	$CollisionShape2D.queue_free()
+	
+	animated_sprite.play("mati")
+	timer.start()
+	
+
+
+func _on_timer_timeout():
+	Engine.time_scale = 1
+	get_tree().reload_current_scene()
